@@ -41,7 +41,7 @@ This repository contains hands-on notebooks covering:
    - Column-parallel sharded MLP implementation
    - Data-parallel MLP implementation
    - Complete gradient computation and backpropagation
-   - Comparison of all parallelism approaches
+   - Comparison of all parallelism approaches.
 
 ## 🚀 Getting Started
 
