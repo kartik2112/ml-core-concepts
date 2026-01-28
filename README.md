@@ -34,6 +34,15 @@ This repository contains hands-on notebooks covering:
    - Masked attention for decoder applications
    - Comparison with PyTorch's implementation
 
+5. **Pure NumPy MLP with Parallelism Strategies** (`05_pure_numpy_mlp_parallelism.ipynb`)
+   - 2-layer MLP with ReLU (forward + backward passes)
+   - Batch dimension support
+   - Row-sharded (tensor-parallel) MLP implementation
+   - Column-parallel sharded MLP implementation
+   - Data-parallel MLP implementation
+   - Complete gradient computation and backpropagation
+   - Comparison of all parallelism approaches
+
 ## 🚀 Getting Started
 
 ### Prerequisites
