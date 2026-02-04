@@ -43,6 +43,25 @@ This repository contains hands-on notebooks covering:
    - Complete gradient computation and backpropagation
    - Comparison of all parallelism approaches
 
+6. **Mixture of Experts (MoE) Layer** (`06_mixture_of_experts.ipynb`)
+   - Expert networks and specialization
+   - Gating mechanism for expert selection
+   - Top-K routing strategy
+   - Load balancing with auxiliary loss
+   - Training example with MoE
+   - Comparison with standard feed-forward networks
+   - Expert selection visualization
+
+7. **Transformer Architecture with MoE** (`07_transformer_with_moe.ipynb`)
+   - Complete transformer implementation
+   - Sinusoidal positional encoding
+   - Multi-head attention mechanism
+   - Mixture of Experts feed-forward network
+   - Residual connections and layer normalization
+   - Full transformer block assembly
+   - Sequence modeling training example
+   - Attention pattern visualization
+
 ## 🚀 Getting Started
 
 ### Prerequisites
