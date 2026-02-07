@@ -1,9 +1,18 @@
 # ML Core Concepts - Interview Preparation Notebooks
 
-A comprehensive repository of Jupyter notebooks covering essential machine learning and deep learning concepts for interview preparation.
+A comprehensive repository of Jupyter notebooks and one-pagers covering essential machine learning and deep learning concepts for interview preparation.
 
 ## 📚 Contents
 
+### 📄 One-Pagers (NEW!)
+Dense, focused reference sheets for quick review and interview prep. See [`one-pagers/`](one-pagers/) for:
+- **Per-Layer FLOPs**: Computational complexity formulas
+- **Attention Block**: Complete architecture and mathematics
+- **Parallelism Modes**: DP, TP, PP, FSDP with collectives
+- **Byte-Movement**: Memory bandwidth and optimization
+- **Memory Breakdown**: Params, grads, activations, optimizer states
+
+### 📓 Hands-On Notebooks
 This repository contains hands-on notebooks covering:
 
 1. **Logistic Regression Pipeline** (`01_logistic_regression_pipeline.ipynb`)
@@ -102,13 +111,14 @@ jupyter notebook
 
 ## 🎯 Learning Objectives
 
-Each notebook is designed to help you:
+This repository helps you:
 
-- Understand core ML/DL concepts through hands-on implementation
+- **Notebooks**: Understand concepts through hands-on implementation
+- **One-Pagers**: Quick reference for interviews with formulas and insights
 - Learn best practices for model training and evaluation
 - Visualize and interpret model behavior
 - Prepare for technical interviews with practical examples
-- Build intuition for advanced architectures
+- Build intuition for advanced architectures and distributed training
 
 ## 📖 Notebook Structure
 
@@ -132,10 +142,17 @@ Each notebook follows a consistent structure:
 ### Deep Learning
 - Convolutional Neural Networks (CNNs)
 - Multi-Layer Perceptrons (MLPs)
-- Attention mechanisms
-- Model parallelism and sharding
+- Attention mechanisms and transformers
+- Model parallelism and distributed training (DP, TP, PP, FSDP)
 - Batch normalization
 - Training loops and optimization
+- Memory and compute efficiency
+
+### Advanced Topics (One-Pagers)
+- FLOPs analysis and computational complexity
+- Memory breakdowns and optimization
+- Byte-movement and bandwidth analysis
+- Parallelism strategies and collectives
 
 ### PyTorch
 - Building neural networks with nn.Module
