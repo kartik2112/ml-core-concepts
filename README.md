@@ -71,6 +71,47 @@ This repository contains hands-on notebooks covering:
    - Sequence modeling training example
    - Attention pattern visualization
 
+8. **Model Training and Distributed Systems** (`08_model_training_and_distributed_systems.ipynb`)
+   - Distributed training strategies
+   - Data parallelism and model parallelism
+   - Pipeline parallelism
+   - Memory optimization techniques
+
+9. **Positional Embeddings: ROPE, Sinusoidal, and Learned** (`09_positional_embeddings.ipynb`)
+   - Sinusoidal positional encodings (original Transformer)
+   - Learned positional embeddings (BERT, GPT)
+   - Rotary Position Embeddings (ROPE) - used in LLaMA, GPT-NeoX
+   - Comparison and visualization of all methods
+   - Length extrapolation capabilities
+   - Implementation with attention mechanisms
+
+10. **Advanced Attention Mechanisms: GQA, MLA, and KV Cache** (`10_attention_mechanisms_gqa_mla.ipynb`)
+    - Multi-Head Attention (MHA) baseline
+    - Multi-Query Attention (MQA) - PaLM, Falcon
+    - Grouped Query Attention (GQA) - LLaMA 2, Mistral
+    - Multi-Head Latent Attention (MLA) - DeepSeek-V2
+    - KV cache for efficient autoregressive inference
+    - Memory and performance comparisons
+    - Production best practices
+
+11. **Speculative Decoding** (`11_speculative_decoding.ipynb`)
+    - Problem: memory-bound LLM generation
+    - Draft model + target model approach
+    - Acceptance rate analysis
+    - 2-5× speedup techniques
+    - Self-speculative and multi-token prediction variants
+    - Performance optimization strategies
+    - Production implementation guide
+
+12. **Continuous Batching and Inference Pipelines** (`12_continuous_batching_pipelines.ipynb`)
+    - Static vs continuous (dynamic) batching
+    - PagedAttention for efficient KV cache management
+    - Request scheduling strategies (FCFS, SJF, priority)
+    - 5-10× throughput improvements
+    - GPU utilization optimization
+    - Production inference pipeline design
+    - Real-world deployment best practices
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -147,6 +188,13 @@ Each notebook follows a consistent structure:
 - Batch normalization
 - Training loops and optimization
 - Memory and compute efficiency
+
+### Advanced LLM Techniques (NEW!)
+- **Positional Embeddings**: ROPE, sinusoidal, learned embeddings
+- **Attention Variants**: GQA, MQA, MLA, KV cache optimization
+- **Inference Optimization**: Speculative decoding (2-5× speedup)
+- **Serving at Scale**: Continuous batching, PagedAttention
+- Production inference pipelines and throughput optimization
 
 ### Advanced Topics (One-Pagers)
 - FLOPs analysis and computational complexity
