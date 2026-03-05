@@ -112,6 +112,39 @@ This repository contains hands-on notebooks covering:
     - Production inference pipeline design
     - Real-world deployment best practices
 
+13. **QLoRA: Efficient LLM Fine-Tuning** (`13_qlora_finetuning.ipynb`)
+    - Full fine-tuning vs PEFT vs LoRA vs QLoRA
+    - LoRA theory: low-rank decomposition $\Delta W = BA$
+    - NF4 quantization vs uniform 4-bit (lower reconstruction error)
+    - Double quantization and paged optimizers
+    - LoRA implementation from scratch in PyTorch
+    - Complete QLoRA SFT pipeline using `transformers`, `peft`, `bitsandbytes`, `trl`
+    - Memory analysis: 7B model fits on a single 24GB GPU
+    - Rank ablation: choosing the right `r` for your task
+
+14. **DPO: Direct Preference Optimization** (`14_dpo_alignment.ipynb`)
+    - RLHF challenges and DPO as a simpler alternative
+    - Bradley-Terry preference model
+    - DPO loss derivation from the RLHF objective (no reward model needed)
+    - DPO loss implementation from scratch
+    - Standard vs Conservative DPO (label smoothing)
+    - Computing log probabilities from language models
+    - Complete DPO training pipeline using `trl` DPOTrainer with QLoRA
+    - Preference dataset formats and popular datasets
+    - Comparison: DPO vs IPO vs SLiC vs PPO
+
+15. **PPO for RLHF: Reinforcement Learning from Human Feedback** (`15_ppo_rlhf.ipynb`)
+    - Three-stage RLHF pipeline: SFT → Reward Model → PPO
+    - PPO clipped surrogate objective and clipping mechanism
+    - Generalized Advantage Estimation (GAE) for language models
+    - Reward model training with Bradley-Terry loss
+    - Token-level RLHF rewards with KL penalty
+    - Actor-Critic with value head implementation
+    - Complete RLHF PPO pipeline using `trl` PPOTrainer
+    - Training monitoring: reward, KL divergence, clip fraction
+    - Reward hacking: causes and mitigation strategies
+    - DPO vs PPO trade-offs and when to use each
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -149,6 +182,13 @@ jupyter notebook
 - `torchvision>=0.15.0` - Computer vision datasets and models
 - `matplotlib>=3.5.0` - Data visualization
 - `seaborn>=0.11.0` - Statistical visualizations
+- `transformers>=4.40.0` - Hugging Face transformers (LLM fine-tuning)
+- `peft>=0.10.0` - Parameter-efficient fine-tuning (LoRA, QLoRA)
+- `trl>=0.8.6` - Transformer Reinforcement Learning (SFT, DPO, PPO)
+- `datasets>=2.18.0` - Hugging Face datasets
+- `accelerate>=0.28.0` - Distributed training acceleration
+- `bitsandbytes>=0.43.0` - 4-bit/8-bit quantization
+- `scipy>=1.10.0` - Scientific computing
 
 ## 🎯 Learning Objectives
 
@@ -195,6 +235,11 @@ Each notebook follows a consistent structure:
 - **Inference Optimization**: Speculative decoding (2-5× speedup)
 - **Serving at Scale**: Continuous batching, PagedAttention
 - Production inference pipelines and throughput optimization
+
+### LLM Fine-Tuning and Alignment (NEW!)
+- **QLoRA**: 4-bit quantized LoRA for memory-efficient fine-tuning (single GPU for 7B+ models)
+- **DPO**: Direct Preference Optimization — simple alignment without a reward model
+- **PPO/RLHF**: Full Reinforcement Learning from Human Feedback pipeline
 
 ### Advanced Topics (One-Pagers)
 - FLOPs analysis and computational complexity
