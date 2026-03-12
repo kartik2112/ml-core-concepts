@@ -4,6 +4,21 @@ A comprehensive repository of Jupyter notebooks and one-pagers covering essentia
 
 ## 📚 Contents
 
+### 🎯 Theoretical Core Concepts — Interview Q&A (NEW!)
+Comprehensive interview preparation notebooks with densely packed Q&A covering popular and tricky questions for AI/ML, Research Scientist, and ML Engineer roles. See [`theoretical-core-concepts/`](theoretical-core-concepts/) for:
+
+| # | Notebook | Topics |
+|---|---|---|
+| 1 | [XGBoost Interview Q&A](theoretical-core-concepts/01_xgboost_interview_qa.ipynb) | Objective function, gain formula, L1/L2 reg, missing values, feature importance (weight/gain/cover/SHAP), LightGBM vs CatBoost, hyperparameter tuning, monotone constraints |
+| 2 | [Random Forest & Ensemble Q&A](theoretical-core-concepts/02_random_forest_interview_qa.ipynb) | Bagging, OOB error, MDI vs permutation importance, bias-variance tradeoff, Extra Trees, Isolation Forest, boosting vs bagging vs stacking |
+| 3 | [Deep Learning Concepts Q&A](theoretical-core-concepts/03_deep_learning_concepts_interview_qa.ipynb) | Backprop, vanishing gradients, activations (ReLU/GELU/SiLU), Adam/AdamW/SGD, weight decay vs L2, transformers vs RNNs, residual connections, dropout, scaling laws, double descent |
+| 4 | [Normalization Types Q&A](theoretical-core-concepts/04_normalization_types_interview_qa.ipynb) | BatchNorm, LayerNorm, RMSNorm, GroupNorm, InstanceNorm, SpectralNorm, AdaLN, Pre-LN vs Post-LN, train vs inference behavior |
+| 5 | [RAG Types Q&A](theoretical-core-concepts/05_rag_types_interview_qa.ipynb) | Naive RAG, Advanced RAG, HyDE, hybrid search, reranking, GraphRAG, Self-RAG, CRAG, FLARE, Modular RAG, Agentic RAG, RAGAS evaluation |
+| 6 | [Traditional ML Q&A](theoretical-core-concepts/06_traditional_ml_interview_qa.ipynb) | Bias-variance, SVM (kernel trick, C, γ), L1/L2/ElasticNet, KNN, K-Means, PCA vs t-SNE/UMAP, cross-validation, feature encoding, target leakage, evaluation metrics |
+| 7 | [Recommendation Systems Q&A](theoretical-core-concepts/07_recommendation_systems_interview_qa.ipynb) | CF (user/item-based), Matrix Factorization, BPR, Two-Tower models, Wide&Deep, DeepFM, SASRec, NDCG, position bias, explore-exploit, multi-stage funnel, ANN retrieval |
+
+Each notebook follows the structure: **Core Concepts → Algorithm Deep-Dive → Trick Questions ⚠️ → Advanced/Research Questions → Quick Reference Cheatsheet + Code Demos**
+
 ### 📄 One-Pagers (NEW!)
 Dense, focused reference sheets for quick review and interview prep. See [`one-pagers/`](one-pagers/) for:
 - **Per-Layer FLOPs**: Computational complexity formulas
@@ -213,6 +228,15 @@ Each notebook follows a consistent structure:
 6. **Summary** - Key takeaways and concepts
 
 ## 🔍 Topics Covered
+
+### 🎯 Theoretical Core Concepts (Interview Q&A)
+- **XGBoost:** Objective function math, regularization, split-finding algorithms, SHAP values, hyperparameter tuning
+- **Random Forests:** Bagging, OOB error, feature importance (MDI vs permutation), bias-variance, ensemble methods
+- **Deep Learning:** Backprop, optimizers (Adam/AdamW/SGD), activations, transformers, regularization, scaling laws
+- **Normalization:** BatchNorm, LayerNorm, RMSNorm, GroupNorm, InstanceNorm, AdaLN, Pre/Post-LN
+- **RAG Systems:** Naive → Advanced → Modular → Agentic RAG, HyDE, GraphRAG, Self-RAG, evaluation
+- **Traditional ML:** SVM, L1/L2/ElasticNet, KNN, K-Means, PCA, bias-variance, evaluation metrics, feature engineering
+- **Recommendation Systems:** Collaborative filtering, Matrix Factorization, Two-Tower, Deep RecSys, multi-stage funnels
 
 ### Machine Learning Fundamentals
 - Data preprocessing and feature engineering
